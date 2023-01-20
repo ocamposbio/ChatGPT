@@ -2,8 +2,8 @@ import os
 import ftplib
 
 # Conexão com o servidor ftp
-ftp = ftplib.FTP("files.000webhost.com")
-ftp.login("cloudpurplecomp", "jZnJYuN28T(trfUFbMDL")
+ftp = ftplib.FTP("ftp_server")
+ftp.login("user", "password")
 
 # Baixando o arquivo keyfile.key
 with open("keyfile.key", "wb") as f:
