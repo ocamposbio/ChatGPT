@@ -1,3 +1,5 @@
+#SNIFFER:
+
 #Example of an Arduino sketch that captures Ethernet traffic using the ESP8266 and sends the captured packets to a remote server for analysis.
 
 #This code configures the ESP8266 with a MAC address and connects to a remote server with the IP address of your_server. 
